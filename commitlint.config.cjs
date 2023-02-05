@@ -21,7 +21,7 @@ module.exports = {
     'type-enum': [
       2,
       'always',
-      ['feat', 'fix', 'docs', 'perf', 'test', ...typesForRules]
+      [...typesForRules]
     ],
     'footer-leading-blank': [1, 'always'],
     'footer-max-line-length': [2, 'always', 100],
