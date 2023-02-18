@@ -1,0 +1,210 @@
+/* 中文字体优化 */
+html {
+	font-family: -apple-system, 'Noto Sans', 'Helvetica Neue', Helvetica,
+		'Nimbus Sans L', Arial, 'Liberation Sans', 'PingFang SC', 'Hiragino Sans GB',
+		'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN',
+		'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti',
+		SimHei, 'WenQuanYi Zen Hei Sharp', sans-serif;
+}
+
+HTML,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td {
+	border: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #fff;
+}
+a:visited {
+	color: #fff;
+}
+a:hover {
+	color: #fff;
+}
+a:active {
+	color: #fff;
+}
+input::-ms-clear {
+	display: none;
+}
+input::-ms-reveal {
+	display: none;
+}
+input {
+	-webkit-appearance: none;
+	margin: 0;
+	outline: none;
+	padding: 0;
+}
+input::-webkit-input-placeholder {
+	color: #ccc;
+}
+input::-ms-input-placeholder {
+	color: #ccc;
+}
+input::-moz-placeholder {
+	color: #ccc;
+}
+input[type='submit'],
+input[type='button'] {
+	cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+	cursor: default;
+}
+button {
+	/*消除button的默认样式*/
+	/*这种写法是对所有的button标签同时生效*/
+	margin: 0px;
+	padding: 0px;
+	/*自定义边框*/
+	border: 0px;
+	/*消除默认点击蓝色边框效果*/
+	outline: none;
+}
+img {
+	border: none;
+}
+ul,
+ol,
+li {
+	list-style-type: none;
+}
+/*公共方法*/
+.clear {
+	clear: both;
+}
+.clearleft {
+	clear: left;
+}
+.clearright {
+	clear: right;
+}
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+.cursor {
+	cursor: pointer;
+}
+
+/*背景及色值表*/
+.bg000 {
+	background: #000;
+}
+.color000 {
+	color: #000;
+}
+
+/*清除浮动，在容器元素上加clearfix类*/
+.clearfix:after {
+	content: '';
+	display: block; /*或者 table*/
+	clear: both;
+}
+.clearfix {
+	zoom: 1; /* IE 兼容*/
+}
+
+/*超过一行展示省略号*/
+.one-line {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+#root,
+#__next {
+	isolation: isolate;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}

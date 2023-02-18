@@ -1,0 +1,15 @@
+.bubble-wrapper {
+	display: flex;
+}
+.img-wrapper {
+	border: 1px solid red;
+	position: relative;
+	width: 150px;
+	height: 180px;
+}
+.img-wrapper .img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
