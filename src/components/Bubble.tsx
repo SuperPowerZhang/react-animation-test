@@ -2,13 +2,16 @@ import React,{ useState } from 'react';
 import imageUrl from '../assets/ani1.png';
 import './bubble.css'
 
+type PropType = {
+  imageUrl:string
+}
 
-function Bubble(){
+function Bubble(props:PropType){
   return (
     <li>
     <div className="img-wrapper">
       <div className='img-ani' />
-      <img className= "img" src={imageUrl} alt="role-picture"  />
+      <img className= "img" src={props.imageUrl} alt="role-picture"  />
     </div>
   </li>
   )
