@@ -4,9 +4,8 @@ import Bubble from './Bubble';
 function BubbleWrapper(){
   return(
     <ul className='bubble-wrapper'>
-      <li>
         <Bubble />
-      </li>
+        <Bubble />
     </ul>
   )
 }

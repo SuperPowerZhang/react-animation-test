@@ -5,9 +5,12 @@ import './bubble.css'
 
 function Bubble(){
   return (
+    <li>
     <div className="img-wrapper">
+      <div className='img-ani' />
       <img className= "img" src={imageUrl} alt="role-picture"  />
     </div>
+  </li>
   )
 }
 
