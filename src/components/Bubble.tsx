@@ -1,17 +1,20 @@
-import React,{ useState } from 'react';
-import imageUrl from '../assets/ani1.png';
+import React,{ MouseEventHandler, useState } from 'react';
 import './bubble.css'
 
 type PropType = {
-  imageUrl:string
+  imageUrl:string,
+  imageOrder:number,
+  isActive:boolean,
+  setActiveImg:(arg:number)=> MouseEventHandler<HTMLLIElement> | undefined
 }
 
 function Bubble(props:PropType){
+  const {isActive, imageOrder,imageUrl,setActiveImg} =props;
   return (
-    <li>
+    <li onClick={()=>setActiveImg(imageOrder)}>
     <div className="img-wrapper">
-      <div className='img-ani' />
-      <img className= "img" src={props.imageUrl} alt="role-picture"  />
+      <div className={isActive?'img-ani':''} />
+      <img className= "img" src={imageUrl} alt="role-picture"  />
     </div>
   </li>
   )
